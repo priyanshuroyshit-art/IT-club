@@ -1,0 +1,160 @@
+export default function App() {
+  return (
+    <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#e6f2ff', color: '#1a1a1a', padding: '20px', maxWidth: '900px', margin: '0 auto' }}>
+      
+      {/* IT CLUB HEADER */}
+      <h1 style={{ color: '#138808', textAlign: 'center', fontSize: '50px', margin: '10px 0', textTransform: 'uppercase', letterSpacing: '2px' }}>
+        IT Club
+      </h1>
+      
+      <hr style={{ border: '2px dashed #000080', margin: '20px 0' }} />
+
+      {/* HEADER SECTION */}
+      <h1 style={{ color: '#000080', textAlign: 'center', fontSize: '45px', margin: '10px 0' }}>
+        🏏 Team India Cricket 🇮🇳
+      </h1>
+
+      <hr style={{ border: '2px solid #ff9933', margin: '20px 0' }} />
+
+      {/* CLICKABLE IMAGE */}
+      <div style={{ textAlign: 'center', margin: '20px 0' }}>
+        <a href="https://www.bcci.tv/" target="_blank">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/200px-Cricket_India_Crest.svg.png" 
+            alt="Team India Logo" 
+            referrerPolicy="no-referrer"
+            style={{ width: '150px', border: '3px solid #000080', borderRadius: '15px', padding: '10px', backgroundColor: 'white' }}
+          />
+        </a>
+        <p style={{ fontSize: '14px', color: '#555' }}>
+          👆 (Click the logo to visit the official BCCI website)
+        </p>
+      </div>
+
+      {/* HISTORY SECTION */}
+      <h2 style={{ backgroundColor: '#ff9933', padding: '10px', borderRadius: '5px', color: 'white', border: '2px solid #cc7a00' }}>📖 Our History</h2>
+      <p style={{ fontSize: '16px', lineHeight: '1.6', backgroundColor: 'white', padding: '15px', border: '2px solid #000080', borderRadius: '8px' }}>
+        Cricket was brought to India a long time ago by British sailors. We played our very first Test match in the year <strong>1932</strong> at Lord's in England. Our first captain was <strong>C. K. Nayudu</strong>. 
+        Over the years, cricket became the most popular sport in our country. It is almost like a religion here! 🏟️
+        <br /><br />
+        You can read the full history on <a href="https://en.wikipedia.org/wiki/History_of_the_Indian_cricket_team" target="_blank" style={{ color: 'blue', textDecoration: 'underline' }}>Wikipedia's Team India page</a>.
+      </p>
+
+      {/* CUPS AND TIMELINE SECTION */}
+      <h2 style={{ backgroundColor: '#ff9933', padding: '10px', borderRadius: '5px', color: 'white', border: '2px solid #cc7a00' }}>🥇 World Cups & Trophies Won</h2>
+      <p style={{ fontSize: '16px' }}>Here is a simple timeline of when we won the biggest cups:</p>
+      <ul style={{ fontSize: '16px', lineHeight: '2', backgroundColor: 'white', padding: '20px 40px', border: '2px solid #000080', borderRadius: '8px' }}>
+        <li>📅 <strong>1983:</strong> Won our first ODI World Cup! (Captain: <a href="https://en.wikipedia.org/wiki/Kapil_Dev" target="_blank" style={{ color: 'blue' }}>Kapil Dev</a>) 🏆</li>
+        <li>📅 <strong>2007:</strong> Won the first ever T20 World Cup! (Captain: <a href="https://en.wikipedia.org/wiki/MS_Dhoni" target="_blank" style={{ color: 'blue' }}>MS Dhoni</a>) 🏆</li>
+        <li>📅 <strong>2011:</strong> Won the second ODI World Cup at home! (Captain: <a href="https://en.wikipedia.org/wiki/MS_Dhoni" target="_blank" style={{ color: 'blue' }}>MS Dhoni</a>) 🏆</li>
+        <li>📅 <strong>2013:</strong> Won the Champions Trophy in England! (Captain: <a href="https://en.wikipedia.org/wiki/MS_Dhoni" target="_blank" style={{ color: 'blue' }}>MS Dhoni</a>) 🏅</li>
+        <li>📅 <strong>2023:</strong> Reached the finals of the ODI World Cup after an incredible 10-match winning streak! (Captain: <a href="https://en.wikipedia.org/wiki/Rohit_Sharma" target="_blank" style={{ color: 'blue' }}>Rohit Sharma</a>) 🥈</li>
+        <li>📅 <strong>2024:</strong> Won the ICC Men's T20 World Cup in Barbados, defeating South Africa by 7 runs in a thrilling final! (Captain: <a href="https://en.wikipedia.org/wiki/Rohit_Sharma" target="_blank" style={{ color: 'blue' }}>Rohit Sharma</a>) 🏆</li>
+        <li>📅 <strong>2026:</strong> Won the ICC Men's T20 World Cup at home, defeating New Zealand by 96 runs in the final at Ahmedabad! (Captain: <a href="https://en.wikipedia.org/wiki/Suryakumar_Yadav" target="_blank" style={{ color: 'blue' }}>Suryakumar Yadav</a>) 🏆</li>
+      </ul>
+
+      {/* FAMOUS STADIUMS */}
+      <h2 style={{ backgroundColor: '#ff9933', padding: '10px', borderRadius: '5px', color: 'white', border: '2px solid #cc7a00' }}>🏟️ Famous Stadiums</h2>
+      <div style={{ fontSize: '16px', lineHeight: '1.6', backgroundColor: 'white', padding: '15px', border: '2px solid #000080', borderRadius: '8px' }}>
+        <p style={{ margin: '0 0 10px 0' }}>India has some of the biggest and loudest cricket stadiums in the world!</p>
+        <ul style={{ margin: '0', paddingLeft: '20px' }}>
+          <li><strong>Narendra Modi Stadium (Ahmedabad):</strong> The largest cricket stadium in the world! It can hold over 130,000 people.</li>
+          <li><strong>Eden Gardens (Kolkata):</strong> Known as the "Mecca of Indian cricket".</li>
+          <li><strong>Wankhede Stadium (Mumbai):</strong> Where India won the 2011 World Cup final! 🎉</li>
+        </ul>
+      </div>
+
+      {/* PLAYERS SECTION */}
+      <h2 style={{ backgroundColor: '#ff9933', padding: '10px', borderRadius: '5px', color: 'white', border: '2px solid #cc7a00' }}>⭐ Famous Players</h2>
+      <p style={{ fontSize: '16px' }}>Click on the photos or names to learn more about these legends.</p>
+
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        
+        {/* Player 1 */}
+        <div style={{ border: '3px solid #000080', padding: '10px', backgroundColor: 'white', width: '200px', textAlign: 'center', borderRadius: '10px' }}>
+          <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar" target="_blank">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Sachin_Tendulkar_in_2011.jpg/220px-Sachin_Tendulkar_in_2011.jpg" 
+              alt="Sachin Tendulkar" 
+              referrerPolicy="no-referrer"
+              style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '5px' }} 
+            />
+          </a>
+          <h3 style={{ margin: '10px 0 5px 0' }}>
+            <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar" target="_blank" style={{ color: '#000080', textDecoration: 'none' }}>
+              Sachin Tendulkar
+            </a>
+          </h3>
+          <p style={{ fontSize: '14px', margin: '0' }}>Known as the God of Cricket.</p>
+        </div>
+
+        {/* Player 2 */}
+        <div style={{ border: '3px solid #000080', padding: '10px', backgroundColor: 'white', width: '200px', textAlign: 'center', borderRadius: '10px' }}>
+          <a href="https://en.wikipedia.org/wiki/MS_Dhoni" target="_blank">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/MS_Dhoni_in_2011.jpg/220px-MS_Dhoni_in_2011.jpg" 
+              alt="MS Dhoni" 
+              referrerPolicy="no-referrer"
+              style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '5px' }} 
+            />
+          </a>
+          <h3 style={{ margin: '10px 0 5px 0' }}>
+            <a href="https://en.wikipedia.org/wiki/MS_Dhoni" target="_blank" style={{ color: '#000080', textDecoration: 'none' }}>
+              MS Dhoni
+            </a>
+          </h3>
+          <p style={{ fontSize: '14px', margin: '0' }}>Captain Cool. Won 3 ICC trophies.</p>
+        </div>
+
+        {/* Player 3 */}
+        <div style={{ border: '3px solid #000080', padding: '10px', backgroundColor: 'white', width: '200px', textAlign: 'center', borderRadius: '10px' }}>
+          <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg/220px-Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg" 
+              alt="Virat Kohli" 
+              referrerPolicy="no-referrer"
+              style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '5px' }} 
+            />
+          </a>
+          <h3 style={{ margin: '10px 0 5px 0' }}>
+            <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank" style={{ color: '#000080', textDecoration: 'none' }}>
+              Virat Kohli
+            </a>
+          </h3>
+          <p style={{ fontSize: '14px', margin: '0' }}>Run machine and aggressive captain.</p>
+        </div>
+
+        {/* Player 4 */}
+        <div style={{ border: '3px solid #000080', padding: '10px', backgroundColor: 'white', width: '200px', textAlign: 'center', borderRadius: '10px' }}>
+          <a href="https://en.wikipedia.org/wiki/Smriti_Mandhana" target="_blank">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Smriti_Mandhana_in_2023.jpg/220px-Smriti_Mandhana_in_2023.jpg" 
+              alt="Smriti Mandhana" 
+              referrerPolicy="no-referrer"
+              style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '5px' }} 
+            />
+          </a>
+          <h3 style={{ margin: '10px 0 5px 0' }}>
+            <a href="https://en.wikipedia.org/wiki/Smriti_Mandhana" target="_blank" style={{ color: '#000080', textDecoration: 'none' }}>
+              Smriti Mandhana
+            </a>
+          </h3>
+          <p style={{ fontSize: '14px', margin: '0' }}>Star batter of the Women's Team!</p>
+        </div>
+
+      </div>
+
+      <br />
+      <hr style={{ border: '2px solid #138808', margin: '20px 0' }} />
+      <p style={{ textAlign: 'center', fontSize: '16px', fontWeight: 'bold' }}>
+        Made by the students of IT Club 🎒📚<br /><br />
+        <a href="https://www.icc-cricket.com/" target="_blank" style={{ color: 'blue', textDecoration: 'underline' }}>Click here to visit the ICC website for more cricket news</a>.
+      </p>
+
+      <div style={{ textAlign: 'right', fontSize: '12px', color: '#666', marginTop: '20px', fontStyle: 'italic' }}>
+        made by priyanshu and sourish
+      </div>
+
+    </div>
+  );
+}
