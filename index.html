@@ -1,138 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Team India Cricket</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Club - Team India Cricket</title>
+    <style>
+        /* 1. Centers everything on the page and sets a clean font */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9; /* Adds a very light background color */
+        }
 
-<style>
-body{
-font-family: Arial, sans-serif;
-background:#e6f2ff;
-max-width:900px;
-margin:auto;
-padding:20px;
-}
+        /* 2. Changes the color of your main headings */
+        h1, h2 {
+            color: #003366; /* Deep blue color like the India jersey */
+        }
 
-h1{
-text-align:center;
-color:#138808;
-font-size:50px;
-}
+        /* 3. The magic fix for sliced images */
+        img {
+            max-width: 100%; /* Makes sure images don't overflow smaller screens */
+            height: auto; /* Keeps the original natural proportions */
+            object-fit: contain; /* Prevents slicing/cropping */
+            display: block;
+            margin: 20px auto; /* Centers the images perfectly */
+            border-radius: 8px; /* Adds soft rounded corners to the images */
+        }
 
-.section{
-background:white;
-padding:15px;
-border:2px solid #000080;
-border-radius:8px;
-margin-bottom:20px;
-}
+        /* 4. Controls the size of the BCCI logo at the top */
+        .logo {
+            max-width: 200px;
+        }
 
-.players{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
+        /* 5. Creates neat little boxes for each famous player */
+        .player-card {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a cool shadow effect */
+        }
 
-.card{
-width:200px;
-border:3px solid #000080;
-padding:10px;
-background:white;
-border-radius:10px;
-text-align:center;
-}
+        .player-card img {
+            max-width: 200px; /* Keeps all player photos uniform in width */
+            border-radius: 5px;
+        }
 
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:5px;
-}
-</style>
+        /* 6. Centers the World Cup list */
+        ul {
+            list-style-position: inside; 
+            padding: 0;
+        }
+
+        /* 7. Footer style */
+        footer {
+            margin-top: 40px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>IT Club</h1>
-<hr>
+    <h1>IT Club</h1>
+    <hr>
 
-<h2 style="text-align:center;">🏏 Team India Cricket 🇮🇳</h2>
+    <h2>🏏 Team India Cricket 🇮🇳</h2>
 
-<div style="text-align:center;">
-<a href="https://www.bcci.tv/" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/200px-Cricket_India_Crest.svg.png" width="150">
-</a>
-<p>Click logo to visit BCCI</p>
-</div>
+    <a href="https://www.bcci.tv/" target="_blank">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/200px-Cricket_India_Crest.svg.png" alt="BCCI Logo">
+    </a>
+    <p><em>Click logo to visit BCCI</em></p>
 
-<div class="section">
-<h2>📖 Our History</h2>
-<p>
-India played its first Test match in 1932 at Lord's. Captain was C.K. Nayudu.
-Cricket later became the most popular sport in India.
-</p>
-</div>
+    <h2>📖 Our History</h2>
+    <p>India played its first Test match in 1932 at Lord's. Captain was C.K. Nayudu.<br>
+    Cricket later became the most popular sport in India.</p>
 
-<div class="section">
-<h2>🥇 World Cups</h2>
-<ul>
-<li>1983 – ODI World Cup (Kapil Dev)</li>
-<li>2007 – T20 World Cup (MS Dhoni)</li>
-<li>2011 – ODI World Cup (MS Dhoni)</li>
-<li>2013 – Champions Trophy</li>
-<li>2024 – T20 World Cup (Rohit Sharma)</li>
-</ul>
-</div>
+    <h2>🥇 World Cups</h2>
+    <ul>
+        <li>1983 – ODI World Cup (Kapil Dev)</li>
+        <li>2007 – T20 World Cup (MS Dhoni)</li>
+        <li>2011 – ODI World Cup (MS Dhoni)</li>
+        <li>2013 – Champions Trophy</li>
+        <li>2024 – T20 World Cup (Rohit Sharma)</li>
+    </ul>
 
-<div class="section">
-<h2>⭐ Famous Players</h2>
+    <h2>⭐ Famous Players</h2>
 
-<div class="players">
+    <div class="player-card">
+        <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Sachin_Tendulkar_in_2011.jpg" alt="Sachin Tendulkar">
+        </a>
+        <h3>Sachin Tendulkar</h3>
+        <p>God of Cricket</p>
+    </div>
 
-<div class="card">
-<a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Sachin_Tendulkar_in_2011.jpg">
-</a>
-<h3>Sachin Tendulkar</h3>
-<p>God of Cricket</p>
-</div>
+    <div class="player-card">
+        <a href="https://en.wikipedia.org/wiki/MS_Dhoni" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/MS_Dhoni_in_2011.jpg" alt="MS Dhoni">
+        </a>
+        <h3>MS Dhoni</h3>
+        <p>Captain Cool</p>
+    </div>
 
-<div class="card">
-<a href="https://en.wikipedia.org/wiki/MS_Dhoni" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/MS_Dhoni_in_2011.jpg">
-</a>
-<h3>MS Dhoni</h3>
-<p>Captain Cool</p>
-</div>
+    <div class="player-card">
+        <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg" alt="Virat Kohli">
+        </a>
+        <h3>Virat Kohli</h3>
+        <p>Run Machine</p>
+    </div>
 
-<div class="card">
-<a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg">
-</a>
-<h3>Virat Kohli</h3>
-<p>Run Machine</p>
-</div>
+    <div class="player-card">
+        <a href="https://en.wikipedia.org/wiki/Smriti_Mandhana" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Smriti_Mandhana_in_2023.jpg" alt="Smriti Mandhana">
+        </a>
+        <h3>Smriti Mandhana</h3>
+        <p>Women's Team Star</p>
+    </div>
 
-<div class="card">
-<a href="https://en.wikipedia.org/wiki/Smriti_Mandhana" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Smriti_Mandhana_in_2023.jpg">
-</a>
-<h3>Smriti Mandhana</h3>
-<p>Women's Team Star</p>
-</div>
+    <hr>
 
-</div>
-</div>
-
-<hr>
-
-<p style="text-align:center;font-weight:bold;">
-Made by the students of IT Club
-</p>
-
-<p style="text-align:right;font-size:12px;">
-made by priyanshu and sourish
-</p>
+    <footer>
+        <p>Made by the students of IT Club</p>
+        <p>made by Priyanshu and Sourish</p>
+    </footer>
 
 </body>
 </html>
